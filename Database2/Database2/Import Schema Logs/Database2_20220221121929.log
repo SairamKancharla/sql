@@ -1,0 +1,84 @@
+02/21/2022 5:49:29 PM	This log contains information about the import schema operation into project 'Database2' on computer 'DESKTOP-I4G8DC5' by user 'SAIRAM'.
+02/21/2022 5:49:30 PM	Import of database schema has started.
+02/21/2022 5:49:50 PM	Gathering logins
+02/21/2022 5:51:31 PM	Gathering database credentials
+02/21/2022 5:51:31 PM	Gathering database options
+02/21/2022 5:51:31 PM	Gathering generic database scoped configuration option
+02/21/2022 5:51:31 PM	Gathering users
+02/21/2022 5:51:31 PM	Gathering roles
+02/21/2022 5:51:31 PM	Gathering application roles
+02/21/2022 5:51:31 PM	Gathering role memberships
+02/21/2022 5:51:31 PM	Gathering filegroups
+02/21/2022 5:51:31 PM	Gathering files
+02/21/2022 5:51:31 PM	Gathering full-text catalogs
+02/21/2022 5:51:31 PM	Gathering assemblies
+02/21/2022 5:51:31 PM	Gathering certificates
+02/21/2022 5:51:31 PM	Gathering symmetric keys
+02/21/2022 5:51:31 PM	Gathering encrypted symmetric keys
+02/21/2022 5:51:31 PM	Gathering schemas
+02/21/2022 5:51:31 PM	Gathering XML schema collections
+02/21/2022 5:51:31 PM	Gathering user-defined data types
+02/21/2022 5:51:31 PM	Gathering user-defined types
+02/21/2022 5:51:31 PM	Gathering table types
+02/21/2022 5:52:26 PM	Gathering unique keys for table types
+02/21/2022 5:52:26 PM	Gathering primary keys for table types
+02/21/2022 5:52:26 PM	Gathering indexes for table types
+02/21/2022 5:52:26 PM	Gathering check constraints for table types
+02/21/2022 5:52:26 PM	Gathering default constraints for table types
+02/21/2022 5:52:26 PM	Gathering partition functions
+02/21/2022 5:52:26 PM	Gathering partition schemes
+02/21/2022 5:52:26 PM	Gathering functions
+02/21/2022 5:52:27 PM	Gathering encrypted functions
+02/21/2022 5:52:27 PM	Gathering aggregates
+02/21/2022 5:52:27 PM	Gathering procedures
+02/21/2022 5:52:27 PM	Gathering encrypted procedures
+02/21/2022 5:52:27 PM	Gathering tables
+02/21/2022 5:52:27 PM	Gathering primary keys
+02/21/2022 5:52:27 PM	Gathering unique constraints
+02/21/2022 5:52:27 PM	Gathering foreign keys
+02/21/2022 5:52:27 PM	Gathering default constraints
+02/21/2022 5:52:27 PM	Gathering check constraints
+02/21/2022 5:52:27 PM	Gathering views
+02/21/2022 5:52:27 PM	Gathering encrypted views
+02/21/2022 5:52:27 PM	Gathering indexes
+02/21/2022 5:52:27 PM	Gathering statistics
+02/21/2022 5:52:27 PM	Gathering full-text index stoplists
+02/21/2022 5:52:27 PM	Gathering search property lists
+02/21/2022 5:52:27 PM	Gathering search properties
+02/21/2022 5:52:27 PM	Gathering full-text indexes
+02/21/2022 5:52:27 PM	Gathering column store indexes
+02/21/2022 5:52:27 PM	Gathering spatial indexes
+02/21/2022 5:52:27 PM	Gathering XML indexes
+02/21/2022 5:52:27 PM	Gathering Selective XML indexes
+02/21/2022 5:52:28 PM	Gathering encrypted triggers
+02/21/2022 5:52:28 PM	Gathering triggers
+02/21/2022 5:52:28 PM	Gathering encrypted and clr ddl triggers
+02/21/2022 5:52:28 PM	Gathering ddl triggers
+02/21/2022 5:52:28 PM	Creating edge constraints
+02/21/2022 5:52:28 PM	Gathering synonyms
+02/21/2022 5:52:28 PM	Gathering defaults
+02/21/2022 5:52:28 PM	Gathering data constraint uddt bindings
+02/21/2022 5:52:28 PM	Gathering rules
+02/21/2022 5:52:28 PM	Gathering data constraint uddt bindings
+02/21/2022 5:52:28 PM	Gathering message types
+02/21/2022 5:52:28 PM	Gathering queues
+02/21/2022 5:52:28 PM	Gathering contracts
+02/21/2022 5:52:28 PM	Gathering services
+02/21/2022 5:52:28 PM	Gathering event notifications
+02/21/2022 5:52:29 PM	Gathering remote service bindings
+02/21/2022 5:52:29 PM	Gathering broker priorities
+02/21/2022 5:52:29 PM	Gathering signatures
+02/21/2022 5:52:29 PM	Gathering data compression options
+02/21/2022 5:52:29 PM	Gathering sequence types
+02/21/2022 5:52:29 PM	Gathering security policies
+02/21/2022 5:52:29 PM	Gather column encryption keys
+02/21/2022 5:52:29 PM	Gathering column master keys
+02/21/2022 5:52:29 PM	Gathering external data sources
+02/21/2022 5:52:29 PM	Gathering external tables
+02/21/2022 5:52:29 PM	Gathering extended properties
+02/21/2022 5:52:29 PM	Gathering assemblies
+02/21/2022 5:52:34 PM	Scanning project for duplicate elements
+02/21/2022 5:52:35 PM	Finished duplicate element processing
+02/21/2022 5:52:39 PM	Finished importing database.
+02/21/2022 5:52:39 PM	A summary of the import was saved to the following location: D:\New Practice\Database2\Database2\Import Schema Logs\Database2_20220221121929.log
+02/21/2022 5:52:39 PM	Click Finish to continue...
