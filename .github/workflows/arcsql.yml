@@ -8,14 +8,16 @@ on:
     workflow_dispatch:
 
 jobs:
-    build:
+    deploy:
         runs-on: windows-latest
         steps:
         - uses: actions/checkout@v1
+        - name: create dacpac
+        run: & 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\msbuild.exe' kcdemodbproject.sqlproj /p:Configuration=Release
         - uses: azure/login@v1
           with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
-
+         - name: Azure SQL Deploy
         - uses: azure/sql-action@v1
           with:
             server-name: arcdatabasedevops.database.windows.net
