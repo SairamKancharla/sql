@@ -1,0 +1,20 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [testadmin] (User)
+       [dbmanager] (Role)
+       [loginmanager] (Role)
+       [dbo].[DatabaseEventsInputTable] (User-Defined Table Type)
+       [dbo].[DatabaseEventTypesInputTable] (User-Defined Table Type)
+       [dbo].[fn_sysdac_get_currentusername] (Function)
+
+** Supporting actions
