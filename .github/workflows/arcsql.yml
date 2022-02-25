@@ -1,4 +1,4 @@
-name: arcsql
+name: Arcsql
 
 on:
     push:
@@ -13,18 +13,15 @@ jobs:
         steps:
         - uses: actions/checkout@v1
         - name: create dacpac
-        run: & 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\msbuild.exe' kcdemodbproject.sqlproj /p:Configuration=Release
+       
         - uses: azure/login@v1
           with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
-         - name: Azure SQL Deploy
+         
         - uses: azure/sql-action@v1
           with:
-            server-name: arcdatabasedevops.database.windows.net
-            connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
-            dacpac-package: './Database2.dacpac'
+            server-name: 'kotthaserver.database.windows.net' 
+            connection-string: '${{ secrets.AZURE_SQL_CONNECTION_STRING }}'
+            dacpac-package:  'Database3.dacpac'
+            arguments: '/p:IncludeCompositeObjects=true'
 
-        # Azure logout 
-        - name: logout
-          run: |
-             az logout
