@@ -1,4 +1,4 @@
-name: ArchSQLDB3
+name: ArchSQLDB
 
 on:
     push:
@@ -8,20 +8,35 @@ on:
     workflow_dispatch:
 
 jobs:
-    deploy:
+    build:
         runs-on: windows-latest
         steps:
         - uses: actions/checkout@v1
-        - uses: azure/login@v1
+       
+   
+        - uses: actions/upload-artifact@v2
           with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
-        - uses: azure/sql-action@v1
+             name: AzureSQLDB
+             path: ${{ github.workspace }}\Database4.dacpac
+        
+    release:
+        needs: build
+        runs-on: windows-latest
+        steps:
+        - name: download AzureSQLDB artifact
+          uses: actions/download-artifact@v2.0.6
+          with:
+             name: AzureSQLDB
+        - name: AzureSQLDB
+          uses: azure/login@v1
+          with:
+             creds: ${{ secrets.AZURE_CREDENTIALS }}
+        - name: Azure SQL Deploy  
+          uses: Azure/sql-action@v1
           with:
             server-name: 'kotthaserver.database.windows.net' 
-            connection-string: '${{ secrets.AZURE_SQL_CONNECTION_STRING }}'
-            dacpac-package: './Database3.dacpac'
-            
-        - name: logout
-          run: |
-             az logout
-
+            connection-string: '${{ secrets.AZURE_SQL_CONNECTION_STRING }}'
+            dacpac-package: 'Database4.dacpac'
+            arguments: '/p:AllowIncompatiblePlatform=true'
+          
+          
